@@ -2,8 +2,6 @@ body{
     box-sizing: border-box;
     margin: 0%;
 }
-
-
 a{
     color: white;
     text-decoration: none;
@@ -16,7 +14,6 @@ a{
     justify-content: space-evenly;
     height: 50px;
 }
-
 .button, button{
     background-color: silver;
     color: black;
@@ -74,5 +71,11 @@ section p{
     background-color: chartreuse;
 }
 section h1 + p{
-    font-family: Arial, Helvetica, sans-serif
+    font-family: cursive;
+}
+footer{
+    height: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
