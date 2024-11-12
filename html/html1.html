@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML TAGS </title>
+        <style> 
+            div{
+                border: 5px outset green ;
+                background-color: antiquewhite;
+                text-align: center;
+                width: 50%;
+                height: 50%;
+            }
+            hr{
+                background-color: green;
+            }
+        </style>
+    </head>
+<body>
+    <p>*************************heading tags from 1 to 6***********************</p>
+    <h1 id="section1"> heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <p>*************************bold tag***********************</p>
+    <b>bold</b>
+    <p>*************************italic tag***********************</p>
+    <i>italic</i>
+    <p>*************************underline tag***********************</p>
+    <u>underline</u>
+    <p>**************************** anchor tag hyper -link tag*****************************</p>
+    <a href="F:\webdevelopment\README.md">README</a>
+    <p>****************anchor tag hyper-link tag opening page in new tab*******************</p>
+    <a href="F:\webdevelopment\README.md" target=" _blank">README</a>
+    <p>****************anchor hyper-link tag,link to email-id*******************</p>
+    <a href="mailto:anitha1995d@gmail.com">Send email</a>
+    <p>****************anchor hyper-link tag,link to phone number*******************</p>
+    <a href="tel:+919660069910">+918660069910</a>
+    <p>************To link to another section on the same page*******************</p>
+    <a href="#section1">Go up</a>
+    <p>******************to trigger javascript code prompt will display msg******************</p>
+    <a href="javascript:alert('Hello World!');">Execute JavaScript</a>
+    <p>*******img tag with width and height******</p>
+    <img src="F:\webdevelopment\cat_image.jfif" alt="cat" width="42" height="42">
+    <p>**********image tag with style -> vertical-align -> bottom </p>
+    <p> image<img src="F:\webdevelopment\simle.jfif" alt="cat" style="vertical-align: bottom" width="10" height="10"></p>
+    <p>**********image tag with style -> vertical-align -> middle </p>
+    <p> image<img src="F:\webdevelopment\simle.jfif" alt="cat" style="vertical-align:middle" width="10" height="10"></p>
+    <p>**********image tag with style -> vertical-align -> top </p>
+    <p>image<img src="F:\webdevelopment\simle.jfif" alt="cat" style="vertical-align: top" width="10" height="10"></p>
+    <p>**********image tag with style -> float -> right </p>
+    <p>image<img src="F:\webdevelopment\cat_image.jfif" alt="cat" style="float:right" width="10" height="10"></body></p>
+    <p>**********image tag with style -> float -> left </p>
+    <p>image<img src="F:\webdevelopment\cat_image.jfif" alt="cat" style="float:left" width="10" height="10"></p>
+    <p>adding hyper link to image </p>
+    <a href="F:\webdevelopment\index-page.html" target=" _blank">                           
+        <img src="smiley.jpg" alt="W3Schools.com" width="100" height="132">
+    </a>
+    <p>**********************unorder list ********************</p>
+    <ul>
+        <li>apple</li>
+        <li>banana</li>
+        <li>custad apple</li>
+        <li>dargon</li>
+    </ul>
+    <p>**********************order list ********************</p>
+    <ol>
+        <li>apple</li>
+        <li>banana</li>
+        <li>custad apple</li>
+        <li>dargon</li>
+    </ol>
+    <p>**********************ordering starts with value number********************</p>
+    <ol>
+        <li value="10">apple</li>
+        <li>banana</li>
+        <li>custad apple</li>
+        <li>dargon</li>
+    </ol>
+    <p>**********************ordering starts with alphabet ********************</p>
+    <ol type="A">
+        <li>apple</li>
+        <li>banana</li>
+        <li>custad apple</li>
+        <li>dargon</li>
+    </ol>
+    <p>**********************ordering in reverse ********************</p>
+    <ol reversed type="i">
+        <li>apple</li>
+        <li>banana</li>
+        <li>custad apple</li>
+        <li>dargon</li>
+    </ol>
+    <p>**********************ordering starts with alphabet ********************</p>
+    <ol type="I">
+        <li>apple</li>
+        <li>banana</li>
+        <li>custad apple</li>
+        <li>dargon</li>
+    </ol>
+    <p>******************* description  list **************** </p>
+    <dl>
+        <dt>COFFEE</dt> <!-- data -->
+         <dd>black coffee</dd> <!-- description of data   -->
+        <dd>chocolate coffee</dd>
+        <dt>TEA</dt>
+        <dd>green tea</dd>
+        <dd>black tea</dd>
+    </dl>
+    <p>***********The div tag defines a division or a section in an HTML document*************</p>
+    <p> div tag is styled with style tag </p>
+    <div>
+        <h2>This is a heading in a div element</h2>
+        <p>This is some text in a div element.</p>
+    </div>
+    <p>**************** span tag applies style to inline elements ***********************</p>
+    <p>I like to spend time watching clear <span style="color:blue">blue</span>sky</p>
+    <p>****************horizontal tag displays line altered using style tag***************</p>
+    <hr>  
+    <p>*******************strong tag and em tagbreak tag also used here******************</p>
+     with strong tag -> <strong>STRONG</strong> without strong tag -> STRONG <br>
+     with em tag -> <em>STRONG</em> without em tag -> STRONG
+    <p>*****************form tag and all tags which comes under form tag****************</p>
+    <form>
+        <label for="fname">First Name *</label>
+        <input type="text" id="fname" name="fname" placeholder="enter your first name" required> <br><br>
+        <label for="lname">Last Name </label>
+        <input type="text" id="lname" name="lname" placeholder="enter your last name"> <br><br>
+        <input type="checkbox" id="system1" name="system1" value="PC">
+        <label for="pc"> I have a PC</label><br>
+        <input type="checkbox" id="system2" name="system2" value="laptop">
+        <label for="laptop"> I have a laptop</label><br>
+        <input type="checkbox" id="system3" name="system3" value="mobile">
+        <label for="vehicle3"> I have a mobile</label><br><br>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ffffff"><br><br>
+        <label for="DOB">DOB</label>
+        <input type="date" id="DOB" name="DOB"> <br><br>
+        <label for="meeting-time">Book your appointment</label> 
+        <input type="datetime-local" id="meeting-time" name="meeting-time" value="2024-06-12T19:30"
+        min="2024-06-07T00:00"
+        max="2024-06-14T00:00"><br><br> 
+        <label for ="email-id">Email-id</label>
+        <input type="email" id="email" name="email"><br><br>
+        <p>********************To select single file  ***************************</p>
+        <label for="myfile">select a file :</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <p>********************To select multiple file ***************************</p>
+        <label for="myfile">select a file :</label>
+        <input type="file" id="myfile" name="myfile" multiple><br><br>
+        <p> input elements of type image are used to create graphical submit buttons</p>
+        <input type="image" id="image" alt="login" src="arrow.jfif" width="20px"> <br> <br>
+        <p> ****************** input type month defines month and year control*****************</p>
+        <label for="month">enter joining date</label>
+        <input type="month" id="month" name="month"><br><br>
+        <p>*****************input type number to enter number in given range*******************</p>
+        <label for="range">Enter number between range between 1 to 10 </label>
+        <input type="number" id="range" name="range" min="1" max="10"><br><br>
+        <p>*******************input type passsword**************</p>
+        <label for="pwd">Passsword</label>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <p>******************input type radio********************************</p>
+        <p>please select your favorite web web fav_language </p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br><br>  
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br><br>  
+        <input type="radio" id="javascript" name="fav_language" value="javascript">
+        <label for="javascript">javascript</label><br><br>   
+        <p>********************************input type range*******************************************</p>
+        <label for="vol">Volume</label>
+        <input type="range" id="vol" name="vol" min="0" max="50"> <br><br>   
+        <p>****************************input type reset******************************************</p>
+        <input type="reset" id="reset" name="reset" value="RESET"><br><br>
+        <p>***************************input type search*********************************</p>
+        <label type="gsearch">Google search</label>
+        <input type="search" id="gsearch" name="gsearch"><br><br>
+        <p>***************************input type tel****************************************</p>
+        <label for="tel">phone</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{5}-[0-9]{5}" size="10"><br><br>
+        <p>***************************input type time****************************************</p>
+        <label for="appt">Time</label>
+        <input type="time" id="appt" name="appt"><br><br>
+        <p>***************************input type url****************************************</p>
+        <label for="url">URL</label>
+        <input type="url" id="url" name="url" pattern="https://.*" size="30" placeholder="https://example.com" required>
+        <p>************************input type  week*************************</p>
+        <label for="week">WEEK</label>
+        <input type="week" id="week" name="week"><br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
