@@ -1,0 +1,47 @@
+.box-container{
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: solid 2px black;
+    margin: 10px;
+}
+.box-container:first-child{
+    background-color: red;
+    position: relative; /* move selected element relative with values given for top and left */
+    top: 10%;
+    left: 30%;
+}
+.box-container:nth-child(2){
+    background-color: blue;
+    position: absolute; /*Absolute positioning takes elements out of the regular document 
+    flow while also affecting the layout of the other elements on the page.*/
+    top: 3px;
+    left: 2px;
+    z-index:-2;
+}
+
+.box-container:nth-child(3){
+    background-color: green;
+    position: fixed; /*selected element will not move when we scroll the page*/
+}
+
+.box-container:nth-child(4){
+    background-color: silver;
+    position: static;
+
+}
+.boxes {
+    height: 300px;
+    width: 500px;
+    border: solid 2px black;
+    margin: 10px;
+}
+.a, .b{
+    height: 100px;
+    width: 200px;
+    border: solid 2px black;
+    margin: 10px;
+}
+.a{
+    background-image: url(F:\full-stack-webdevelopment\images\sunrise.jpg);
+}
