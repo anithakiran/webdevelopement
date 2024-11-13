@@ -19,12 +19,10 @@
     left: 2px;
     z-index:-2;
 }
-
 .box-container:nth-child(3){
     background-color: green;
     position: fixed; /*selected element will not move when we scroll the page */
 } 
-
 .box-container:nth-child(4){
     background-color: silver;
     position: static;
@@ -63,5 +61,41 @@
     a,b,c,d -> numbers describing the liner tansformation
     tx & ty -> numbers describing the translation to apply
     */
-
+}
+.anime-box{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    animation-name: change-location;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: step-end; /*there are many options check while practicing*/
+    position: relative;
+}
+@keyframes change-location{
+    0%{
+        left: 0px;
+        top : 0px;
+    }
+    25%{
+        background-color: red;
+        left : 200px;
+        top : 0px; 
+    }
+    50%{
+        background-color: chocolate;
+        left: 200px;
+        top:200px;
+    }
+    75%{
+        background-color: orange;
+        left: 0px;
+        top : 200px;
+    }
+    100%{
+        background-color: black;
+        top: 0px;
+        left : 0px;
+    }
 }
