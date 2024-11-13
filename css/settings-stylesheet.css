@@ -1,6 +1,6 @@
 .box-container{
-    height: 200px;
-    width: 300px;
+    height: 100px;
+    width: 100px;
     background-color: yellow;
     border: solid 2px black;
     margin: 10px;
@@ -14,7 +14,7 @@
 .box-container:nth-child(2){
     background-color: blue;
     position: absolute; /*Absolute positioning takes elements out of the regular document 
-    flow while also affecting the layout of the other elements on the page.*/
+    flow while also affecting the layout of the other elements on the page. */
     top: 3px;
     left: 2px;
     z-index:-2;
@@ -22,14 +22,13 @@
 
 .box-container:nth-child(3){
     background-color: green;
-    position: fixed; /*selected element will not move when we scroll the page*/
-}
+    position: fixed; /*selected element will not move when we scroll the page */
+} 
 
 .box-container:nth-child(4){
     background-color: silver;
     position: static;
-
-}
+} 
 .boxes {
     height: 300px;
     width: 500px;
@@ -43,5 +42,21 @@
     margin: 10px;
 }
 .a{
-    background-image: url(F:\full-stack-webdevelopment\images\sunrise.jpg);
+    background-image: url('F:/full-stack-webdevelopment/images/sunrise.jpg'); /* in css we should use / for path */
+    background-size: 70px 50px; /* value in number,contain & cover*/
+    background-repeat: no-repeat;
+    background-position: left top; /*30px from left 50px from top  we can also give values like left bottom right top*/ 
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    transform: translate(900px, 500px) rotate(120deg) skew(20deg, 10deg) scale(1.5);
+    transform:
+    /*x-axis=50 left and y-axis=50 right  to placce box center whole web page */
+    /*rotate will rotate the box*/
+    /*skew will twist the box*/
+    /*scale will increase the size of box */
+    /*matrix*/
+    
 }

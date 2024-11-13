@@ -24,6 +24,7 @@ a{
     font-size: large;
     font-family:'Times New Roman', Times, serif;
     cursor: pointer;
+    transition: all 2s; /**/
 }
 
 .button:hover, button:active{
