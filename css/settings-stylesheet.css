@@ -50,13 +50,18 @@
 .box{
     height: 100px;
     width: 100px;
-    background-color: crimson;
-    transform: translate(900px, 500px) rotate(120deg) skew(20deg, 10deg) scale(1.5);
-    transform:
+    background-color: papayawhip;
+    /*transform: translate(900px, 500px) rotate(120deg) skew(20deg, 10deg) scale(1.5);*/
+    transform:  matrix(2,3,4,5,2,4);
     /*x-axis=50 left and y-axis=50 right  to placce box center whole web page */
     /*rotate will rotate the box*/
     /*skew will twist the box*/
     /*scale will increase the size of box */
-    /*matrix*/
-    
+    /*matrix* {a b}  {a c tx}   
+              {c d}  {b d ty}  
+                     {0 0  1}
+    a,b,c,d -> numbers describing the liner tansformation
+    tx & ty -> numbers describing the translation to apply
+    */
+
 }
