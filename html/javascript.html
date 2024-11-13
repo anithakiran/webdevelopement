@@ -220,6 +220,75 @@
             }
             document.getElementById("demoo").innerHTML =text;
         }
-</script>
-</body>
+
+        console.log("***************loops**************")
+        for (let i = 0; i <=10; i++){
+            console.log(i);
+            if (i === 6){
+                break;
+            }
+        }
+
+        const arr = ["book","pen","pencil","easer","sharpener"];
+        for(let i=0;i<=arr.length;i++)
+        {
+            console.log(arr[i]);
+        }
+
+
+        for(let key in object){
+            console.log(key +" : " + object[key]);
+        }
+
+        for(let i of arr)
+        {
+            console.log(i);
+        }
+
+        let i=1;
+        while(i <=10)
+        {
+            console.log(i);
+            i++;
+        }
+
+        let k=1
+        do{
+            console.log(k);
+            k++;
+        }while(k <= 10)
+
+        const myArray = [9,3,5,7,8];
+        let l = 10;
+
+        do {
+            myArray.push(i);
+            i++;
+        } while(i <=10)
+
+        console.log(myArray); // [9, 3, 5, 7, 8, 11]
+
+        const numbers = [45, 6, 89,75];
+        let g = "";
+        numbers.forEach(myFunctions);
+
+        function myFunctions(value,index,array){
+            console.log(g+=value);
+        }
+
+        let student = ['deepu','banu','ammulu'];
+        student.forEach(myFunctionForEach);
+
+        function myFunctionForEach(item,index,arr)
+        {
+            arr[index] = " hello " + item;
+        }
+        console.log(student);
+
+        function toCelsius(fahrenheit) {
+            return(5/9)*(fahrenheit-32);
+        }
+        document.getElementById("demos").innerHTML = to
+    </script>
+ </body>
 </html>
