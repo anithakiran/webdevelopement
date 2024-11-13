@@ -7,6 +7,9 @@
 </head>
 <body>
     <h2 id="demo"></h2>
+    <input id="myInput" type="text">
+    <button onclick="myFunction()">check</button>
+    <p id="demoo"></p>
     <script>
         console.log("*********Number related functions/methods********")
         let firstname;
@@ -107,6 +110,116 @@
         //splice(start,deletecount,item1,iteam2) 
         console.log(device.sort()); // sorts array elements which every order is given
         console.log(device.reverse()); // reverse elements what ever order is given
-    </script>
+       
+        console.log("******************objects************************");
+        const object = {brandName : "volvo", model : "v60", engine: "4556",engines : ["23445","23456"]};
+        console.log(object);
+
+        console.log("********************operators******************");
+        //arithmetic opertors
+        let operand1 = 10;
+        let operand2 = 90;
+        //addition operator
+        console.log("addition : " + operand1 + " + " + 50 + " = ",operand1 + 50 ); // 10+50=60
+        //subtraction operator
+        console.log("subraction : " + operand2 + " - " + 50 + " = ",operand2 - 50 );//90-50=40
+        //muiltipilcaion operator
+        console.log("mulitiplication : " + operand1 + " * "+ 80 + " = ", operand1 * 80);//10*80=800
+        //division operator
+        console.log("division : " + operand1 + " / "+ 40 + " = ", operand1 / 40);//10/40=0.25
+        //remainder operator
+        console.log("remainder : " + operand1 + " % "+ 20 + " = ", operand2 % 20);//10%20=10
+        //increment operator
+        console.log("increment : " + operand1 + "++"+ " = ",++operand1 );//10++ = 11
+        //decrement operator
+        console.log("decrement : " + operand1 + "--"+ " = ",--operand1 ); //11-- = 10
+        //exponentiation operator
+        console.log("exponentiation :" + operand2 + " ** 30  = ", operand2 ** 30); //90 ** 30  =  4.2391158275216203e+58
+
+        console.log("************************ Assignment operator****************");
+        let a = 7;
+        console.log("Assignment operator: a = ",a ); //a=7
+        // addition assignment operator
+        a += 5;  // a = a + 5
+        console.log("Addition Assignment: a += 5, a =", a); // 7+5=12
+        // subtraction assignment operator
+        a -= 5;  // a = a - 5
+        console.log("Subtraction Assignment: a -= 5, a =", a); // 7-5=7
+
+        // multiplication assignment operator
+        a *= 2;  // a = a * 2
+        console.log("Multiplication Assignment: a *= 2, a =", a); // 7*2=14
+
+        // division assignment operator
+        a /= 2;  // a = a / 2
+        console.log("Division Assignment: a /= 2, a =", a); // 14/2= 7
+
+        // remainder assignment operator
+        a %= 2;  // a = a % 2
+        console.log("Remainder Assignment: a %= 2, a =", a);// 7%2=1
+        let c = 10
+
+        // exponentiation assignment operator
+        c **= 2;  // c = c**2
+        console.log("Exponentiation Assignment: a **= 2, a =", c); // 100 
+
+        console.log("************************comparsion operator***************************")
+        const t = 6, b = 2;
+        console.log(t +" > " +b + " =", t > b); // true
+        console.log(t +" == " +b + " =",t == b); // false
+        console.log(t +" != " +b + " =",t != b); // true
+        console.log(t +" < " +b + " =",t < b); //false
+        console.log(t +" >= " +b + " =",t >= b);//true
+        console.log(t +" <= " +b + " =",t <= b); // false
+        console.log(t +" === "+b + " =",t === b); // false
+        console.log(t +" !== "+b + " =",t !== t); // false
+
+        console.log("*************************logical operator************************")
+        const d = 5, e = 3;
+        console.log((d < 6) && (e < 5));//5<6 && 3 < 5 => true //logical AND
+        console.log((d < 6) || (e < 5));//5<6 || 3 < 5 => true // logical OR
+        console.log(d != 5)//false // logical NOT
+        
+        console.log("*******************conditional statements**********************")
+        
+        console.log("*****if statment****")
+        
+        //let score = prompt("plese enter the score");
+        let score = 40
+        if(score >= 90){
+            console.log("A");
+        }
+        else if(score >= 60){
+            console.log("B");
+        }
+        else if( score >= 30){
+            console.log("C");
+        }
+        else{
+            console.log("better luck next time");
+        }
+
+        console.log("*********switch statment in web page******");
+
+        function myFunction() {
+            var text;
+            var fruit = document.getElementById("myInput").value;
+
+            switch(fruit) {
+                case "banana" :
+                    text = "banana is good for healty...";
+                break;
+                case "orange" :
+                    text = "organe are good for health but should not be taken on empty stomach...";
+                break;
+                case "apple" :
+                    text = "apple a day keeps a doctor away...";
+                break;
+                default:
+                    text = "I rearly eat "+ fruit + "...";
+            }
+            document.getElementById("demoo").innerHTML =text;
+        }
+</script>
 </body>
 </html>
