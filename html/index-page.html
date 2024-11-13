@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java-script</title>
+</head>
+<body>
+    <h2 id="demo"></h2>
+    <script>
+        console.log("*********Number related functions/methods********")
+        let firstname;
+        var lastname;
+        firstname = "anitha"
+        lastname = "kiran"
+        const branch = "cse"; /*fixed value*/
+        console.log("firstname =" ,firstname)
+        console.log("lastname =",lastname)
+        let x,y,z;
+        x = 10;
+        y = 5;
+        z = x + y;
+        console.log("value of z=",z)
+        const demo = document.getElementById("demo") /* through id we selected the element */
+        demo.innerHTML = "hello" /* assigning value to element */
+        document.write("<h2>Hi!!!</h2>") /* writing content directly to document */
+        // window.alert("welcome") /* display alert window has notification when we refresh a page*/
+        console.log("hi from console")
+        let floatNumber=3.14;
+        let decimalNumber=5;
+        console.log(typeof(floatNumber)); // number 
+        console.log(typeof(decimalNumber)); //number
+        let stringg="hello";
+        console.log(typeof(stringg)); //string
+        let numberToString = floatNumber.toString(); // converting to string
+        console.log(typeof(numberToString)); // string
+        /*let number = 10;
+        demo.innerHTML = number.toExponential(2); */
+        let num = 20; 
+        numberr =num.toExponential(4);
+        console.log("exponential number = ",numberr); 
+        /* (n>0): The power of 10 is written as 1 followed by (n) zeros. 
+        For example, (10^{6}=1,000,000). 
+        (n<0): The power of 10 is written as 1 with (n) places after the decimal point. 
+        For example, (10^{-2}=0.01)
+        n=0 : the power of 10 is 1 */
+        let numbertofix = 10.03858;
+        console.log("fixed number = ",numbertofix.toFixed(2)); // 10.04 round up value
+
+        let numbertopresecision =10.2345;
+        console.log("prescision number = ",numbertopresecision.toPrecision(3)); //10.2
+
+        let str = "hello"
+        console.log(typeof(Number(str)));  //string to number using Number funcion 
+
+        console.log(typeof(parseInt("hi"))); // string to number using parseInt function
+
+        console.log(typeof(parseFloat("99.999"))); // string to float using parseFloat function 
+        
+        console.log("*********string and escape charaters********")
+
+        // we can use '' or "" for a string in javascript 
+
+        let name = "anitha's kiran" // this correct usage of quotes 
+        console.log(name); // anitha's kiran
+        //let name1 = 'anitha's kiran' // wrong usage of quotes error
+        let name2 = 'anitha\'s kiran' // using escape charater 
+        console.log(name2); //anitha's kiran
+        let name3 = 'anitha\'s \t kiran'
+        console.log(name3); //anitha's 	 kiran   --> name has tab between
+        let name4 = 'anitha\'s \n kiran'
+        console.log(name4); // prints kiran in next line \n means next line
+        let name5 = 'anitha\'s \v kiran'
+        console.log(name5); // vertical 
+        let name6 = 'anitha\'s \\ kiran'
+        console.log(name6); // anitha's \ kiran
+
+        console.log("**************string methods*********************")
+                     //01234567891011
+        const names = "Anitha Kiran"
+        console.log(names.slice(0,6));//Anitha
+        console.log(names.substring(7,12));// kiran
+        console.log(names.substr(4));//ha kiran
+        console.log(names.replace("Anitha","sai"));
+        console.log(names.indexOf('i'));// 2 it will show first occrance left to right
+        console.log(names.lastIndexOf('i'))// 8 it will search from last right to left
+        console.log(names.startsWith('A'));//true it will check word starts with A or not
+        console.log(names.endsWith('n')); //true
+
+        console.log("**************array methods*********************")
+        let device = ["laptop", "mobile", "pc"];
+        console.log(device); // (3) ['laptop', 'mobile', 'pc' ]
+        console.log(device.toString()); //laptop,mobile,pc
+        let games = ["candy crush", "ludo"];
+        console.log(device.join(games)); // joins two arrays into single string
+        console.log(device.join(" ")); // adds space between elements
+        console.log(device.pop()); //removes last element of array and displays the element pc
+        console.log(device.push("pc")); //add element to end of the array and displays index where it add the element 3
+        console.log(device.push("tab"));//4
+        console.log(device.shift());// removes element from first and displays/return it
+        console.log(device.unshift("laptop")); // add element at first and returns present length of array
+        console.log(device.length);// returns length of the array
+        console.log(device.concat(games)); // concats two arrays into single array
+        console.log(device.splice(2,0,"macbook","iphone","andiord"));//adds or removes element 
+        //displays [] empty array if element is not deleted
+        //displays ["pc"] displays element which is deleted 
+        //splice(start,deletecount,item1,iteam2) 
+        console.log(device.sort()); // sorts array elements which every order is given
+        console.log(device.reverse()); // reverse elements what ever order is given
+    </script>
+</body>
+</html>
