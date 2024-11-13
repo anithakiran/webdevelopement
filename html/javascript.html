@@ -297,19 +297,19 @@
         let hello = "";
 
         hello = function() {
-        return "Hello World!";
+        return "without arrow";
         }
 
         document.getElementById("example").innerHTML = hello();
 
         hello1 = () => {
-         return "Hello World!";
+         return "arrow function with return ";
         }
 
         document.getElementById("demos").innerHTML = hello1();
 
                 
-        hello2 = () => "Hello...!";
+        hello2 = () => "arrow function without return";
 
         document.getElementById("example1").innerHTML = hello2();
 
