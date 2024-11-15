@@ -3,10 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM</title>
 </head>
-<body onload="console.log('Welcome to my home page!');">
-    …
-  </body>
+<body>
+  <h1 class ="query">Queryselector 1</h1>
+  <div>
+      <p id="message">js</p>
+  </div>
+  <div>
+    <input type="radio" name="language" value="js">
+    <label>JS</label><br>
+    <input type="radio" name="language" value="python">
+    <label>python</label>
+  </div>
+  <div>
+    <h1> 1st heading </h1>
+    <h1> 2nd heading </h1>
+    <h1> 3rd heading </h1>
+    <h1> 4th heading </h1>
+  </div>
+  <div>
+    <p class="messanger"> first paragraph </p>
+    <p class="messanger"> second paragraph </p>
+  </div>
+  <div>
+    <h1 class="txt">first heading</h1>
+      <div id="container">
+      <h1 class="txt">second heading</h1>
+      <h1 class="txt">third heading</h1>
+      </div>
+  </div>
+  <div>
+    <div id="cont">
+      <h1 class="query">Queryselector 2</h1>
+      <h1 class="query">Queryselector 3</h1>
+    </div>
+  </div>
+  <div class="title">
+    <p class="typ"> Welcome to DOM HTML</p>
+  </div>
+  <div class="pernt"><p> Welcome to DOM HTML 1</p><p> Welcome to DOM HTML 2 </p><p> Welcome to DOM HTML 3</p><p> Welcome to DOM HTML 4 </p><p> Welcome to DOM HTML  5</p>
+  </div>
+  <div class="rt">
+    <p> Welcome to DOM HTML 1</p>
+    <p class="second"> Welcome to DOM HTML 2</p>
+    <p> Welcome to DOM HTML 3</p>
+    <p> Welcome to DOM HTML 4</p>
+  </div>
+  <div>
+      <ul id="menu">
+        <li> HOME</li>
+        <li class="chk">ABOUT</li>
+        <li style="display: none;">Blog</li>
+      </ul>
+  </div>
+  <div>
+    <p id="smai">world</p>
+  </div>
+   <script>
+    let msg = document.getElementById("message");
+    console.log("getElement by id method used here ",msg);
+  </script>
+  <script>
+    let rado = document.getElementsByName("language");
+    console.log("getElementByName",rado);
+  </script>
+  <script> 
+    let h = document.getElementsByTagName("h1");
+    console.log("getElementByTagName",h);
+  </script>
+  <script>
+            
+      let cls = document.getElementsByClassName("messanger");
+      console.log("getElementByClassName",cls);
+      console.log("****************************");
+
+      let abc = document.getElementById("container");
+      let mege = abc.getElementsByClassName("txt");
+      console.log(mege);
+  </script>
+  <script>
+    let def = document.querySelector(".query");
+    console.log(def);
+
+    let ghi = document.querySelectorAll(".query");
+    console.log(ghi);
+
+    let ghk = document.getElementById("cont");
+    let jik = document.querySelectorAll("div,h1");
+    console.log(jik);
+  </script>
+  <script>
+    let tr = document.querySelector(".typ");
+    console.log("parentnode using child node",tr.parentNode);
+  </script>
+  <script>
+    let parent = document.querySelector(".pernt");
+    console.log("firstchild of paremt",parent.firstChild);
+    console.log("first element child", parent.firstElementChild);
+    console.log("last  element child", parent.lastElementChild);
+    console.log("all child element", parent.childNodes);
+  </script>
+  <script>
+    let scd = document.querySelector(".second");
+    console.log(scd.nextElementSibling);
+    console.log(scd.previousElementSibling);  
+  </script>
+  <script>
+      let div =document.createElement("div");
+      div.innerHTML = "<p>Welcome to the world</p>";
+      document.body.appendChild(div);
+      console.log(div);
+  </script>
+  <script>
+    let menu = document.getElementById("menu");
+    let list = document.createElement("li");
+    list.innerHTML="PROJECT";
+    menu.appendChild(list);
+    console.log(menu.textContent);
+    console.log(menu.innerHTML);
+    //menu.innerHTML="<h1>Hello!</h1>";
+    let existingElement = document.querySelector(".chk");
+    existingElement.after("Some new text content."); //ADDING ELEMENT USING AFTER METHOD
+    
+    let pr = document.getElementById("menu");
+    pr.append("bye");
+    pr.prepend("hi");
+
+    let newNode = menu.cloneNode(true); // if true conent will be cloned if false content will nt be cloned
+    console.log(newNode);
+  </script>
+  
+  <script>
+    let text = document.getElementById("smai").innerHTML; 
+    document.getElementById("smai").innerHTML = text.replace("world", "sweet world");
+
+              // Select the parent element
+            let part = document.getElementById("smai");
+
+            // Create a new text node
+            let newText = document.createTextNode("This is new text content.");
+
+          // Select the old child node (a text node)
+          let oldTextNode = parent.childNodes[0]; // Assuming it's the first child
+
+          // Replace the old text node with the new text
+          parent.replaceChild(newText, oldTextNode);
+
+    </script>
+
+
+</body>
   
 </html>
